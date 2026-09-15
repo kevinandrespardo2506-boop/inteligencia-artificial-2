@@ -1,12 +1,12 @@
-Resumen del Documento: Conceptos Clave de Aprendizaje Automático
+# Resumen del Documento: Conceptos Clave de Aprendizaje Automático #
 El documento presenta una guía visual e informativa dividida en seis temas principales de aprendizaje automático: Regresión Lineal, Método del Gradiente, Regresión Polinomial, Curvas de Aprendizaje, Regularización y Clasificación.
-Ecuación Normal y Regresión Lineal
+ # Ecuación Normal y Regresión Lineal #
 Para resolver problemas de regresión lineal, la Ecuación Normal ofrece una solución matemática directa que calcula de forma explícita los parámetros óptimos con el fin de minimizar la función de error (como el error cuadrático medio, MSE). Por ejemplo, en un modelo que predice la satisfacción de vida según el PIB per cápita, la regresión lineal traza una línea recta optimizada ajustando los parámetros para representar la relación general entre las variables.
-Método del Gradiente
+# Método del Gradiente #
 El método del descenso del gradiente consta de tres pasos fundamentales: calcular las derivadas parciales de la función de costo, dar un paso de descenso en la dirección donde dicho costo disminuye, y aplicar un criterio de tolerancia para detenerse cuando el vector del gradiente alcanza un nivel mínimo. En particular, variantes como el método estocástico presentan fluctuaciones al actualizar los parámetros, lo cual ayuda al algoritmo a escapar de mínimos locales en la superficie de costo. Las rutas de los tres principales algoritmos (Batch, Estocástico y Mini-batch) muestran diferentes comportamientos dentro del espacio de parámetros durante la optimización.
-Regresión Polinomial y Modelos Complejos
+# Regresión Polinomial y Modelos Complejos #
 La regresión polinomial adapta el modelo lineal a conjuntos de datos más complejos transformando las características mediante potencias o características elevadas (por ejemplo, incorporando términos cuadráticos o cúbicos), permitiendo que la línea de predicción curva se ajuste mejor a patrones no lineales.
 Curvas de Aprendizaje: Subajuste y Sobreajuste
 Las curvas de aprendizaje comparan el rendimiento del modelo en el conjunto de entrenamiento versus el conjunto de validación. Un diagnóstico de subajuste se evidencia mediante mesetas altas y muy juntas, indicando que ni el conjunto de entrenamiento ni el de validación logran un bajo nivel de error. Por otro lado, una gran brecha entre ambas curvas refleja un grave sobreajuste, donde el error de entrenamiento es muy bajo pero el de validación se mantiene significativamente alto.
-Regularización y Parada Temprana
+# Regularización y Parada Temprana #
 Para controlar el sobreajuste y limitar la complejidad del modelo, la técnica de parada temprana frena el proceso de entrenamiento justo en el punto de mínimo error en el conjunto de validación (antes de que el error comience a elevarse nuevamente por sobreajustar los datos de entrenamiento).
