@@ -1,4 +1,6 @@
 # Resumen: Entrenando Redes Profundas # 
 El entrenamiento de redes profundas se enfrenta a retos importantes como el gradiente inestable, donde las señales de error se desvanecen o explotan al propagarse por capas profundas, y la saturación de funciones de activación (como la sigmoide en sus extremos planos).
 Para mitigar estos problemas, se emplean estrategias clave como métodos de inicialización (Glorot, He y LeCun) y funciones de activación avanzadas o suaves (como ReLU, ELU y SELU), las cuales buscan lograr la auto-normalización y controlar la varianza de las señales.
+ 
+ 
 Adicionalmente, técnicas como la normalización por lotes optimizan el flujo interno evaluando métricas para centrar, escalar y desplazar las activaciones. Por su parte, el aprendizaje transferido permite reutilizar capas de redes ya entrenadas —congelando la base y ajustando únicamente las capas superiores—, lo que optimiza grandes recursos y ha impulsado el renacimiento de las redes neuronales.
