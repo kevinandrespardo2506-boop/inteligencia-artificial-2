@@ -1,0 +1,18 @@
+ # Visión por Computadora y TensorFlow #
+ # Introducción a la Visión por Computadora #
+La visión por computadora (Computer Vision) es un campo de la inteligencia artificial dedicado a capacitar a las computadoras para interpretar, procesar y comprender el mundo visual a partir de imágenes digitales y videos. Tradicionalmente, este dominio dependía de algoritmos matemáticos diseñados manualmente para detectar bordes, texturas y formas específicas. Sin embargo, la llegada del aprendizaje profundo (Deep Learning) transformó radicalmente este campo, permitiendo a los sistemas extraer patrones jerárquicos complejos de manera automática directamente desde los datos.
+
+# El Rol de TensorFlow #
+En este panorama, TensorFlow —el marco de trabajo de código abierto desarrollado por Google— se ha consolidado como una de las herramientas más potentes y utilizadas para el desarrollo de modelos de visión por computadora. TensorFlow proporciona un ecosistema flexible de flujos de trabajo, bibliotecas y recursos de soporte que permiten a investigadores y desarrolladores construir desde experimentos académicos hasta sistemas de producción industrial a gran escala con alta eficiencia computacional.
+
+ # Redes Neuronales Convolucionales (CNN) #
+La arquitectura fundamental de la visión por computadora moderna dentro de TensorFlow se apoya principalmente en las Redes Neuronales Convolucionales (CNN). A través del uso de capas de convolución, estas redes aplican filtros deslizantes sobre las imágenes para capturar características locales básicas en las primeras capas, como bordes y curvas, agrupándolas progresivamente en niveles superiores para reconocer estructuras complejas como rostros, objetos o paisajes. Mediante la API de alto nivel tf.keras, TensorFlow simplifica la definición y el entrenamiento de estas arquitecturas complejas con pocas líneas de código.
+
+# Aprendizaje por Transferencia (Transfer Learning) #
+Además del entrenamiento desde cero, TensorFlow destaca por facilitar el aprendizaje por transferencia (Transfer Learning). A través de módulos como tf.keras.applications, los desarrolladores pueden reutilizar modelos avanzados preentrenados en extensos conjuntos de datos (como ImageNet) —por ejemplo, arquitecturas ResNet, EfficientNet o MobileNet—. Al congelar las representaciones de las capas iniciales y ajustar únicamente las capas superiores para una tarea específica, se reduce de forma drástica el tiempo de entrenamiento y la cantidad de datos requeridos para lograr una alta precisión.
+
+# Aplicaciones Prácticas #
+El alcance práctico de la visión por computadora con TensorFlow abarca diversas tareas clave en la industria. Entre ellas se encuentran la clasificación de imágenes (identificar qué objeto está presente), la detección de objetos (localizar múltiples objetos trazando cajas delimitadoras a su alrededor mediante herramientas como la TensorFlow Object Detection API), la segmentación semántica y de instancias (clasificar cada píxel individual de la imagen) y la generación de imágenes realistas a través de modelos generativos.
+
+# Opciones de Despliegue #
+Por último, el ecosistema de TensorFlow ofrece sólidas opciones de despliegue que permiten trasladar los modelos de visión por computadora al entorno real. A través de TensorFlow Lite, los modelos de visión pueden optimizarse mediante técnicas de cuantización y poda para ejecutarse en dispositivos móviles e IoT en tiempo real. Asimismo, herramientas como TensorFlow.js permiten llevar la inferencia visual directamente a los navegadores web, mientras que TensorFlow Serving facilita el despliegue en la nube a escala empresarial.
